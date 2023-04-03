@@ -1,5 +1,5 @@
 body{
-    background-color: lightblue;
+    background: linear-gradient(90deg, rgb(9, 181, 250) 0%, rgb(0, 132, 255) 54%);
 }
 input{
     padding: 20px;
@@ -8,24 +8,54 @@ input{
 .kijelzo:disabled{
     background-color: white;
     text-align: right;
+    font-weight: bold;
 }
 .kijelzo{
-    width: 220px;
-}
-.main{
-    display: flex;
-    justify-content: center; 
-}
-table{
-    background-color:  gray;
+    width: 85%;
+    height: 4.1vh;
+    margin-bottom: 2vh;
     box-shadow: 0 0 10px black;
-    padding: 15px;
-    border-radius: 15px;
-}
-input {
     border-radius: 15px;
     border: none;
-    margin: 10px;
-    box-shadow: 0 0 5px black;
-
+    margin: 5px;  
+    font-size: 20px;
+    color: black;
 }
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+table{
+    background-color:  rgba(0, 0, 0, 0.126);
+    box-shadow: 0 0 20px black;
+    padding: 20px;
+    border-radius: 15px;
+}
+.gomb{
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    width: 8vh;
+    height: 65px;
+    box-shadow: 0 0 10px black; 
+    margin: 10px; 
+}
+input[type=button]:hover{
+    font-weight: bold;
+    text-shadow: 0 0 30px black;
+}
+.reset{ 
+    height: 8.5vh;
+    position: absolute;
+    margin-top: 5px;
+    box-shadow: none;
+    border: none;
+    border-right: 1px solid black;
+    background: rgba(255, 0, 0, 0.587); 
+    font-size: 15px; 
+    font-weight: bold; 
+    border-radius:  15px 0 0 15px;
+}
+

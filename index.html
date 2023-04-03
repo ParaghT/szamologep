@@ -9,39 +9,42 @@
     <title>Szg.Paraméterátadással</title>
 </head>
 <body>
-    <h1>Szamámológép paraméteresen</h1>
     <div class="main">
         <form name="szgprm">
             <table>
                 <tr>
                     <td colspan="4">
+                        <input type="button" class="reset" value="C" onclick="reset()">
                         <input type="text" name="kijelzo" class="kijelzo" disabled>
                     </td>
+                       
                 </tr>
                 <tr>
-                    <td><input type="button" value="9" onclick="gomb(9)"></td>
-                    <td><input type="button" value="8" onclick="gomb(8)"></td>
-                    <td><input type="button" value="7" onclick="gomb(7)"></td>
-                    <td><input type="button" value="*" onclick="szoroz()"></td>
+                    <td><input type="button" class="gomb" value="9" onclick="gomb(9)"></td>
+                    <td><input type="button" class="gomb" value="8" onclick="gomb(8)"></td>
+                    <td><input type="button" class="gomb" value="7" onclick="gomb(7)"></td>
+                    <td><input type="button" class="gomb" value="*" onclick="szoroz()"></td>
                    
                 </tr>
                 <tr>
-                    <td><input type="button" value="6" onclick="gomb(6)"></td>
-                    <td><input type="button" value="5" onclick="gomb(5)"></td>
-                    <td><input type="button" value="4" onclick="gomb(4)"></td>
-                    <td><input type="button" value="/" onclick="oszt()"></td>
+                    <td><input type="button" class="gomb" value="6" onclick="gomb(6)"></td>
+                    <td><input type="button" class="gomb" value="5" onclick="gomb(5)"></td>
+                    <td><input type="button" class="gomb" value="4" onclick="gomb(4)"></td>
+                    <td><input type="button" class="gomb" value="/" onclick="oszt()"></td>
+                  
                 </tr>
                 <tr>
-                    <td><input type="button" value="3" onclick="gomb(3)"></td>
-                    <td><input type="button" value="2" onclick="gomb(2)"></td>
-                    <td><input type="button" value="1" onclick="gomb(1)"></td>
-                    <td><input type="button" value="-" onclick="kivon()"></td>
+                    <td><input type="button" class="gomb" value="3" onclick="gomb(3)"></td>
+                    <td><input type="button" class="gomb" value="2" onclick="gomb(2)"></td>
+                    <td><input type="button" class="gomb" value="1" onclick="gomb(1)"></td>
+                    <td><input type="button" class="gomb" value="-" onclick="kivon()"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="C" onclick="reset()"></td>
-                    <td><input type="button" value="0" onclick="gomb(0)"></td>
-                    <td><input type="button" value="+" onclick="meg()"></td>
-                    <td><input type="button" value="=" onclick="egyenlo()"></td>      
+                    <td><input type="button" class="gomb" value="√" onclick="gyok()"></td>
+                    <td><input type="button" class="gomb" value="X&#178;" onclick="negyzet()"></td>
+                    <td><input type="button" class="gomb" value="+" onclick="meg()"></td>
+                    <td><input type="button" class="gomb" value="=" onclick="egyenlo()"></td> 
+
                 </tr>
             </table>
         </form> 

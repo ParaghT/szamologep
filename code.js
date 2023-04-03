@@ -22,6 +22,16 @@ function meg(){
     document.szgprm.kijelzo.value = "";
     muvelet = "+"
 }
+function gyok(){
+    egyik = document.szgprm.kijelzo.value*1;
+    document.szgprm.kijelzo.value = "";
+    muvelet = "√"
+}
+function negyzet(){
+    egyik = document.szgprm.kijelzo.value*1;
+    document.szgprm.kijelzo.value = "";
+    muvelet = "X2"   
+}
 function egyenlo(){
     masik = document.szgprm.kijelzo.value*1;
     var eredmeny = 0;
@@ -33,9 +43,18 @@ function egyenlo(){
         eredmeny = egyik * masik;
     } else if(muvelet == "/"){
         eredmeny = egyik * masik;
-    }   
+    } else if(muvelet == "√"){
+        x=Math.sqrt(eval(egyik));
+        eredmeny = x;     
+    } else if(muvelet == "X2"){
+        x=Math.pow(eval(egyik),2);
+        eredmeny = x;  
+
+    }
     document.szgprm.kijelzo.value = eredmeny; 
 }
+
 function reset(){
     window.location.reload();
 }
+
