@@ -1,0 +1,31 @@
+body{
+    background-color: lightblue;
+}
+input{
+    padding: 20px;
+    margin: 5px;
+}
+.kijelzo:disabled{
+    background-color: white;
+    text-align: right;
+}
+.kijelzo{
+    width: 220px;
+}
+.main{
+    display: flex;
+    justify-content: center; 
+}
+table{
+    background-color:  gray;
+    box-shadow: 0 0 10px black;
+    padding: 15px;
+    border-radius: 15px;
+}
+input {
+    border-radius: 15px;
+    border: none;
+    margin: 10px;
+    box-shadow: 0 0 5px black;
+
+}

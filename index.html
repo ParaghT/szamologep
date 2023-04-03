@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" type="text/javascript"></script>
+    <title>Szg.Paraméterátadással</title>
+</head>
+<body>
+    <h1>Szamámológép paraméteresen</h1>
+    <div class="main">
+        <form name="szgprm">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" name="kijelzo" class="kijelzo" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="9" onclick="gomb(9)"></td>
+                    <td><input type="button" value="8" onclick="gomb(8)"></td>
+                    <td><input type="button" value="7" onclick="gomb(7)"></td>
+                    <td><input type="button" value="*" onclick="szoroz()"></td>
+                   
+                </tr>
+                <tr>
+                    <td><input type="button" value="6" onclick="gomb(6)"></td>
+                    <td><input type="button" value="5" onclick="gomb(5)"></td>
+                    <td><input type="button" value="4" onclick="gomb(4)"></td>
+                    <td><input type="button" value="/" onclick="oszt()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="3" onclick="gomb(3)"></td>
+                    <td><input type="button" value="2" onclick="gomb(2)"></td>
+                    <td><input type="button" value="1" onclick="gomb(1)"></td>
+                    <td><input type="button" value="-" onclick="kivon()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="C" onclick="reset()"></td>
+                    <td><input type="button" value="0" onclick="gomb(0)"></td>
+                    <td><input type="button" value="+" onclick="meg()"></td>
+                    <td><input type="button" value="=" onclick="egyenlo()"></td>      
+                </tr>
+            </table>
+        </form> 
+
+    </div>
+   
+</body>
+</html>
